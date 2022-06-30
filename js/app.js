@@ -3,10 +3,10 @@ numericos o alfanumercios, por ej. probar crear 30 numero y cada vez que crearmo
 numero este debe ser unico no se puede repetir con uno generado anteriormente.*/
 
 let array = []
-let limite = parseInt(prompt('Ingrese la cantidad de numero que quiere mostrar'))
+let limite = parseInt(prompt('Ingrese un valor entre el 0 y el 100'))
 
 while(array.length < limite){
-    let numero = Math.floor(Math.random()*51)
+    let numero = Math.floor(Math.random()*101)
     if(!array.includes(numero)){
         array.push(numero)
     }
